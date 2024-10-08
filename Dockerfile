@@ -12,8 +12,6 @@ RUN curl -fsSL https://bun.sh/install | bash
 RUN echo 'export BUN_INSTALL="/home/node/.bun"' >> /home/node/.bashrc && \
     echo 'export PATH="$BUN_INSTALL/bin:$PATH"' >> /home/node/.bashrc
 
-COPY package.json tsconfig.json ./
-
 RUN bun install
 
 COPY . .
