@@ -35,7 +35,7 @@ jobs:
         run: docker compose up -d
 
       - name: Test if the server is running
-        run: curl --retry 10 --retry-delay 5 --retry-all-errors --fail http://localhost:3000
+        run: curl --retry 10 --retry-delay 5 --retry-all-errors --fail http://localhost:5000
 
       - name: Stop Docker container
         run: docker compose down
