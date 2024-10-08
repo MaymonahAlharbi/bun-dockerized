@@ -4,8 +4,6 @@ services:
   app:
     build: .
     ports:
-      - "3000:3000"
+      - "5020:5020"
     volumes:
       - .:/usr/src/app
-    stdin_open: true
-    tty: true
