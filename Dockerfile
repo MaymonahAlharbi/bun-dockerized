@@ -18,7 +18,7 @@ RUN bun install
 
 COPY . .
 
-EXPOSE 5000
+EXPOSE 5020
 
-CMD ["bun", "run", "./server.ts"]
+CMD ["bun", "run", "./server.tsx"]
 
